@@ -1,0 +1,27 @@
+.user-avatar {
+  display: block;
+  border-radius: 100%;
+  width: 20em;
+  height: 20em;
+}
+
+.user-name {
+  font-family: Helvetica;
+}
+
+.user-username {
+  font-family: Helvetica;
+  color: gray;
+  font-weight: lighter;
+}
+
+.user-bio {
+  font-family: Helvetica;
+  overflow: auto;
+}
+
+button {
+  margin-top: 1em;
+  width: 100%;
+  height: 2.5em;
+}

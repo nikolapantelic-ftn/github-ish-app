@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-repos',
+  selector: 'gh-profile-repos',
   templateUrl: './repos.component.html',
   styleUrls: ['./repos.component.css']
 })

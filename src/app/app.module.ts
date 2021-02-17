@@ -10,6 +10,9 @@ import { OverviewComponent } from './profile/overview/overview.component';
 import { ReposComponent } from './profile/repos/repos.component';
 import { ContributionsComponent } from './profile/overview/contributions/contributions.component';
 import { RepoComponent } from './profile/overview/repos/repo/repo.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { ProfileNavbarComponent } from './profile/profile-navbar/profile-navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,13 @@ import { RepoComponent } from './profile/overview/repos/repo/repo.component';
     OverviewComponent,
     ReposComponent,
     ContributionsComponent,
-    RepoComponent
+    RepoComponent,
+    ProfileNavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
