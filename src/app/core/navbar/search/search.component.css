@@ -1,0 +1,23 @@
+.nav-search {
+  display: block;
+  margin: 12px;
+  background-color: #24292e;
+  border: 1px solid gray;
+  min-height: 2em;
+  border-radius: 5px;
+  color: white;
+  padding-left: 1em;
+  width: 35vh;
+
+  -webkit-transition: width 0.2s ease-in-out;
+  -moz-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-search:focus {
+  background-color: white;
+  border: 1px solid white;
+  color: #24292e;
+  width: 70vh;
+}
