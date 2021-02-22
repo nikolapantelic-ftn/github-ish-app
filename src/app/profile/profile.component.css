@@ -1,4 +1,6 @@
 #profile-user {
+  position: relative;
+  top: -75px;
   float: left;
   width: 25%;
 }
@@ -6,7 +8,6 @@
 #profile-content {
   float: left;
   width: 75%;
-  background-color: #24292e;
 }
 
 #profile {

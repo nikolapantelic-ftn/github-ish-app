@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Repo } from '../repo';
 
 @Component({
   selector: 'gh-profile-repos-repo',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./repo.component.css']
 })
 export class RepoComponent implements OnInit {
-  @Input() repo: any;
+  @Input() repo: Repo;
 
   constructor() { }
 

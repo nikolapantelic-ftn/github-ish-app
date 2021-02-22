@@ -1,0 +1,40 @@
+.border-gray {
+  border: solid 1px #e8e8e8;
+  border-radius: 5px;
+}
+
+.m-5 {
+  margin: 10px;
+}
+
+.p-5 {
+  padding: 10px;
+}
+
+#repo {
+  width: 50%;
+  float: left;
+  font-family: Helvetica;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-gray {
+  color: gray;
+}
+
+a {
+  display: block;
+  color: royalblue;
+  margin-bottom: 1em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
