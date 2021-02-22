@@ -3,12 +3,24 @@
     <img class="user-avatar" src="https://avatars.githubusercontent.com/u/11015949?s=460&u=cb466f6b32b3ff976677cc92f17a3042afd7629c">
   </div>
   <div>
-    <h1 class="user-name">Nikola Pantelic</h1>
-    <h2 class="user-username">nikolapantelic-ftn</h2>
+    <h1 class="user-name">{{user.name + ' ' + user.lastName}}</h1>
+    <h2 class="user-username">{{user.username}}</h2>
   </div>
-  <div class="user-bio">
-    Computer sciences student at Faculty of Technical Sciences
+  <div *ngIf="!edit else showEdit">
+    <div class="user-bio">
+      {{user.bio}}
+    </div>
+    <button class="button" (click)="editProfile()">Edit profile</button>
   </div>
-  <button>Edit profile</button>
-
+  <ng-template #showEdit>
+    <div>
+      <textarea [(ngModel)]="editedBio"></textarea>
+      <div class="w-50 left">
+        <button class="button" style="margin-right: 3px" (click)="saveChanges()">Save</button>
+      </div>
+      <div class="w-50 left">
+        <button class="button" style="margin-left: 3px;" (click)="edit = false">Cancel</button>
+      </div>
+    </div>
+  </ng-template>
 </div>

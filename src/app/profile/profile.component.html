@@ -1,9 +1,10 @@
+<gh-profile-navbar></gh-profile-navbar>
+<hr>
 <div id="profile">
-  <gh-profile-navbar></gh-profile-navbar>
   <div id="profile-user">
-    <gh-profile-user></gh-profile-user>
+    <gh-profile-user [user]="user"></gh-profile-user>
   </div>
   <div id="profile-content">
-    User content.
+    <gh-profile-overview></gh-profile-overview>
   </div>
 </div>

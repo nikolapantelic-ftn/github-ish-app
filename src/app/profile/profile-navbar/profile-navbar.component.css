@@ -1,0 +1,41 @@
+.nav {
+  list-style-type: none;
+  width: 1280px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.nav-item {
+  display: inline;
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  padding: 40px 12px 6px;
+  color: #24292e;
+  font-family: Helvetica;
+  border-bottom: 3px solid white;
+}
+
+.nav-icon {
+  display: block;
+  padding: 12px;
+}
+
+.nav-link:link {
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-bottom-color: lightgray;
+
+  -webkit-transition: border-bottom-color 0.2s ease-in-out;
+  -moz-transition: border-bottom-color 0.2s ease-in-out;
+  -o-transition: border-bottom-color 0.2s ease-in-out;
+  transition: border-bottom-color 0.2s ease-in-out;
+}

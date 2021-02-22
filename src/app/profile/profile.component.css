@@ -4,6 +4,9 @@
 }
 
 #profile-content {
+  float: left;
+  width: 75%;
+  background-color: #24292e;
 }
 
 #profile {
@@ -11,4 +14,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #eeeeee;
+  background-color: #eeeeee;
 }
