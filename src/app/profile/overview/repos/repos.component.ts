@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Repo } from './repo';
+import {UserService} from '../../services/user.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'gh-profile-overview-repos',
@@ -7,21 +9,14 @@ import { Repo } from './repo';
   styleUrls: ['./repos.component.css']
 })
 export class ReposComponent implements OnInit {
-  repos: Array<Repo>;
+  repos$: Observable<Repo[]>;
 
-  constructor() {
-    this.repos = [];
+  constructor(private userService: UserService) {
+
   }
 
   ngOnInit(): void {
-    this.repos.push({
-      name: 'platform-tutor-ui-web',
-      description: 'Web UI for Clean CaDET tutor.'
-    });
-    this.repos.push({
-      name: 'platform-java-compiler',
-      description: 'This is a description for platform-java-compiler.'
-    });
+    this.repos$ = this.userService.getUserRepos();
   }
 
 }
